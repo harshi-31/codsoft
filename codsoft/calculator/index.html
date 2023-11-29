@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Calculator</title>
+    <script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+        integrity= 
+"sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script> 
+    <script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+        integrity= 
+"sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script> 
+    
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <button onclick="AT_add('(')">(</button>
+            <button onclick="AT_add(')')">)</button>
+            <button onclick="cls()">CE</button>
+            <button onclick="cls()">C</button>
+            <button onclick="AT_add('7')">7</button>
+            <button onclick="AT_add('8')">8</button>
+            <button onclick="AT_add('9')">9</button>
+            <button onclick="AT_add('/')">/</button>
+            <button onclick="AT_add('4')">4</button>
+            <button onclick="AT_add('5')">5</button>
+            <button onclick="AT_add('6')">6</button>
+            <button onclick="AT_add('*')">*</button>
+            <button onclick="AT_add('1')">1</button>
+            <button onclick="AT_add('2')">2</button>
+            <button onclick="AT_add('3')">3</button>
+            <button onclick="AT_add('-')">-</button>
+            <button onclick="AT_add('0')">0</button>
+            <button onclick="AT_add('.')">.</button>
+            <button onclick="exe()">=</button>
+            <button onclick="AT_add('+')">+</button>
+        </div>
+    </div>
+
+    <script>
+        var val = document.getElementById("display");
+
+        function AT_add(v) {
+            val.innerText += v;
+        }
+
+        function cls() {
+            val.innerText = "";
+        }
+
+        function exe() {
+            val.innerText = eval(val.innerText);
+        }
+
+        function cancel() {
+            val.innerText = val.innerText.substr(0, val.innerText.length - 1);
+        }
+    </script>
+
+    
+</body>
+</html>

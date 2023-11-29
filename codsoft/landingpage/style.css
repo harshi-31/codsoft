@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+section{
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(183, 172, 172, 0.6),rgba(180, 162, 162, 0.6)), url("https://cdn2.vectorstock.com/i/1000x1000/34/46/people-working-in-the-office-vector-17913446.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    width:85%;
+    margin:auto;
+}
+
+nav{
+    height: 80px;
+}
+
+nav h1{
+    float: left;
+    line-height: 80px;
+    font-size: 35px;
+    font-size: inline;
+    color:#eb7620
+}
+
+nav ul{
+    float: right;
+    line-height: 80px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 0px 5px;
+}
+
+nav ul li a{
+    color:#2d2828;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 7px 8px;
+}
+
+nav ul li a:hover{
+    background-color: #eb7620;
+    transition: 0.5s ease;
+}
+
+.article{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    transform: translateY(25vh);
+}
+
+.article h1{
+    font-size: 36px;
+    color: #242121;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.article p{
+    font-size: 18px;
+    color: #262020;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+.article .btn{
+    color: #fff;
+    padding: 12px 25px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #7a2420;
+}
+
+.article .btn:hover{
+    background-color: #924b4b;
+    transition: 0.5s ease;
+}
